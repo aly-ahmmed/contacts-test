@@ -1,0 +1,11 @@
+google:
+  app_key: 1030239060974.apps.googleusercontent.com
+  app_secret: 1i6N8PiSPNlKHkZF_30tPa0i
+
+yahoo:
+  app_key: dj0yJmk9RmVjVUk4cE84RWwzJmQ9WVdrOWRIZEtVRko0TXpJbWNHbzlOemt4TnpreE5EWXkmcz1jb25zdW1lcnNlY3JldCZ4PTM2
+  app_secret: 0f4f4a538f9f11198533add41b4210e0e2221d94
+
+live:
+  app_key: 00000000400D7D7D
+  app_secret: 77OfefqX3fNFTuqLI-CHiEd8v3Tpuchh

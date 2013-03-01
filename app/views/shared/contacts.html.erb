@@ -1,0 +1,31 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<script type="text/javascript">
+  
+  var token = window.location.href.substring(window.location.href.indexOf('access_token=')+13,
+  window.location.href.indexOf('&'));
+  var url = "<%= @url %>";
+  
+  if(window.location.hash != "") window.location = url+'?access_token='+token;
+  
+</script>
+<%= link_to("<< Back", {:controller => 'welcome'}) %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+
+  <%  if (@contacts.kind_of?(Array))
+    @contacts.each do |contact| %>
+  <tr>
+    <td><%= contact['name'] %></td>
+    <td><%= contact['email'] %></td>
+  </tr>
+<% end
+end%>
+</table>
+

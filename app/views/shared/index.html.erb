@@ -1,0 +1,21 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<%= form_for(:user, :url => {:action => 'get'}) do |f| %>
+
+  <div class="field">
+    <%= f.label :user_name %><br />
+    <%= f.text_field  :user_name %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="form-buttons">
+    <%= submit_tag("Get contacts") %>
+  </div>
+
+<% end %>
