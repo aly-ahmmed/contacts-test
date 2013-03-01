@@ -9,7 +9,7 @@ class YahooController < ApplicationController
 
   def redirect
     token = YahooHelper.redirect_callback(params[:oauth_token],
-      session[:oauth_secret], params[:oauth_verifier])
+    session[:oauth_secret], params[:oauth_verifier])
     session[:oauth_token] = token[:oauth_token]
     session[:oauth_secret] = token[:oauth_secret]
 
